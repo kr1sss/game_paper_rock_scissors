@@ -1,0 +1,43 @@
+body {
+	background-image: url("http://images.amcnetworks.com/bbcamerica.com/wp-content/uploads/2012/06/rockpaperscissors.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+}
+
+h3 {
+	color: #076358;
+	font-size: 100px;
+	font-weight: bold;
+	margin-top: 150px;
+	text-transform: uppercase;
+}
+
+.buttons {
+	display: flex;
+	justify-content: center;
+	padding: 120px;
+	font-size: 50px;
+	text-transform: uppercase;
+}
+
+.buttons span {
+	margin: 100px;
+}
+
+.btn {
+	font-weight: bold;
+	margin: 20px;
+	text-transform: uppercase;
+}
+
+.btn:hover {
+	color: #ff160a;
+	transition: 0.5s;
+}
+
+.shadow {
+	background-color: #808080;
+	color: #fff;
+	line-height: 30px;
+}
