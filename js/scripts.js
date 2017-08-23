@@ -35,7 +35,7 @@ function setGameElements() {
         resultsElem.style.display = 'block';
       break;
     case 'ended':
-        newGameBtn.innerText = 'Jeszcze raz';
+        newGameBtn.innerText = 'Once again';
     case 'notStarted':
     default:
         newGameElem.style.display = 'block';
@@ -52,7 +52,7 @@ var playerPointsElem = document.getElementById('js-playerPoints'),
     computerPointsElem = document.getElementById('js-computerPoints');
 
 function newGame() {
-  player.name = prompt('Wpisz swoje imię', 'Imię gracza');
+  player.name = prompt('Type your name', 'Player name');
   if (player.name) {
     player.score = computer.score = 0;
     gameState = 'started';
@@ -102,10 +102,10 @@ function checkRoundWinner(playerPick, computerPick) {
     }
 
     if 	(winnerIs == 'player') {
-        playerResultElem.innerHTML = "Wygrana!";
+        playerResultElem.innerHTML = "Win!";
         player.score++;
     } else if (winnerIs == 'computer') {
-        computerResultElem.innerHTML = "Wygrana!";
+        computerResultElem.innerHTML = "Win!";
         computer.score++;
     }
 
@@ -121,11 +121,11 @@ function setGamePoints() {
 
 function tenPoints() {
 	if (player.score === 10) {
-		alert('Wygrałeś!!! :) Jeszcze raz?');
+		alert('You won!!! :) Once again?');
 		gameState = 'ended';
 		setGameElements();
 	} else if (computer.score === 10) {
-		alert('Przegrałeś :( Rewanż?');
+		alert('You lost :( Rematch?');
 		gameState = 'ended';
 		setGameElements();
 	}
