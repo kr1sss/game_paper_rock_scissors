@@ -61,6 +61,10 @@ h3 {
 	margin: 0;
 	font-size: 25px;
 }
+
+.shadow {
+	font-size: 12px;
+}
 }
 
 
@@ -72,5 +76,9 @@ h3 {
 
 .buttons {
 	flex-direction: column;
+}
+
+.shadow {
+	font-size: 14px;
 }
 }
